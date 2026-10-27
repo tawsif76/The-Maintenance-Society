@@ -1,0 +1,21 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+.vscode/
+.idea/
+
+# Generated main-experiment records and paper outputs remain local,
+# except for the final preprint PDF.
+data/
+results/*
+!results/preprint/
+results/preprint/*
+!results/preprint/latex/
+results/preprint/latex/*
+!results/preprint/latex/main-primearxiv.pdf

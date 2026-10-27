@@ -1,0 +1,88 @@
+{
+  "design_version": "0.1",
+  "study_type": "local open-weight model benchmark",
+  "research_question": "Does explicit maintenance accounting change maintenance concentration and group productivity?",
+  "workshop": {
+    "agents": 6,
+    "rounds_per_episode": 30,
+    "initial_wear": 12,
+    "failure_threshold": 30,
+    "shutdown_rounds": 2,
+    "repair_wear": 12,
+    "production_points": 3,
+    "production_wear": 1,
+    "maintenance_capacity": 6,
+    "wear_floor": 0,
+    "simultaneous_actions": true,
+    "score_before_failure_check": true,
+    "record_final_round_failure": true
+  },
+  "protocol": {
+    "type": "fixed turn-based",
+    "actions": [
+      "produce",
+      "maintain"
+    ],
+    "proposal_collection": "independent; reveal together",
+    "final_decision_collection": "independent; reveal only after all commit",
+    "max_message_words": 60,
+    "discussion_rounds_in_context": 5,
+    "action_history": "complete",
+    "silent_truncation": false,
+    "max_model_correction_requests": 1,
+    "on_second_invalid_output": "mark_episode_incomplete",
+    "model_calls_during_shutdown": false
+  },
+  "conditions": {
+    "A": {
+      "maintenance_totals_in_dashboard": false,
+      "communication": false
+    },
+    "B": {
+      "maintenance_totals_in_dashboard": true,
+      "communication": false
+    },
+    "C": {
+      "maintenance_totals_in_dashboard": false,
+      "communication": true
+    },
+    "D": {
+      "maintenance_totals_in_dashboard": true,
+      "communication": true
+    }
+  },
+  "schedule": {
+    "episodes_per_model_per_condition": 10,
+    "model_count": 2,
+    "total_main_episodes": 80,
+    "episode_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "pilot": false,
+    "parameter_sensitivity_study": false
+  },
+  "evaluation": {
+    "end_of_episode_recognition": true,
+    "recognition_points_per_evaluator": 100,
+    "self_credit_allowed": false,
+    "recognition_changes_rewards": false,
+    "final_rounds_to_report_separately": 6,
+    "zero_maintenance_concentration": null,
+    "zero_declaration_fulfilment": null
+  },
+  "scope": {
+    "local_only": true,
+    "cloud_inference": false,
+    "training": false
+  }
+}
+

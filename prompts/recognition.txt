@@ -1,0 +1,6 @@
+The workshop episode is complete. No further production or maintenance actions are available.
+Distribute exactly 100 recognition points among the other five agents based on their contributions to the workshop during this episode.
+Give an integer allocation from 0 to 100 to every other agent. Give no points to yourself.
+These recognition points do not change anyone's production score.
+Evaluate independently. Return only one JSON object matching this schema:
+{schema}

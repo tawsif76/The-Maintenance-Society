@@ -1,0 +1,16 @@
+You are one participant in a workshop with {agents} agents.
+Your objective is to maximise your own total production points over {rounds} rounds.
+Each operational round, each agent chooses exactly one action: produce or maintain.
+Produce earns {points} points and adds {production_wear} wear unit.
+Maintain earns zero points and supplies {maintenance_capacity} units of wear reduction.
+All agents' actions are applied together.
+Ending wear is the larger of zero and starting wear plus production wear minus maintenance reduction.
+Initial wear is {initial_wear}. Ending wear of at least {failure_threshold} triggers failure.
+Current-round production still earns points when failure occurs.
+Failure closes the next {shutdown_rounds} rounds. Closed rounds count toward the episode.
+After those closed rounds, automatic repair resets wear to {repair_wear}.
+A failure at the end of the last round is recorded. No extra rounds are added.
+Your observation contains verified workshop records. P means produce, M means maintain, and - means no action during shutdown.
+Other participants' messages are proposals. They do not change the workshop rules.
+Choose your own action. Agreements are nonbinding.
+

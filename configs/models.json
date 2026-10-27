@@ -1,0 +1,40 @@
+{
+  "runtime": "ollama",
+  "models": [
+    {
+      "name": "Qwen3-4B-Instruct-2507",
+      "tag": "qwen3:4b-instruct-2507-q4_K_M",
+      "quantisation": "Q4_K_M",
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "supports_thinking": true
+    },
+    {
+      "name": "Phi-4-mini-instruct",
+      "tag": "phi4-mini:3.8b-q4_K_M",
+      "quantisation": "Q4_K_M",
+      "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+      "supports_thinking": false
+    }
+  ],
+  "execution": {
+    "max_loaded_models": 1,
+    "max_in_flight_requests": 1,
+    "separate_agent_observations": true
+  },
+  "generation": {
+    "status": "explicit frozen settings; full-history software checks are required in each run manifest",
+    "context_tokens": 8192,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repeat_penalty": 1.0,
+    "max_action_output_tokens": 64,
+    "max_proposal_output_tokens": 256,
+    "max_recognition_output_tokens": 256
+  },
+  "reproducibility": {
+    "ollama_version": "0.40.3",
+    "prompt_version": "workshop-agent-v2",
+    "note": "Exact model digests and capabilities were measured locally. The main runner checks version, digests, context headroom, and overflow rejection before inference episodes."
+  }
+}
