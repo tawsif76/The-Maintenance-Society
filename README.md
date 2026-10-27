@@ -1,8 +1,8 @@
-# The Maintenance Society: Coordination of Preventive Work in Small LLM Agents
+# The Maintenance Society: Coordination of Preventive Work in Small Language Model Agents
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 
-Official repository for **"The Maintenance Society: Coordination of Preventive Work in Small LLM Agents"**.
+Official repository for **"The Maintenance Society: Coordination of Preventive Work in Small Language Model Agents"**.
 
 This benchmark studies how small language model agents allocate effort between private production and shared infrastructure maintenance under repeated operational pressure.
 
