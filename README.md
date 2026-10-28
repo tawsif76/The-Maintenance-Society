@@ -1,7 +1,5 @@
 # The Maintenance Society: Coordination of Preventive Work in Small Language Model Agents
 
-[Project overview and author portfolio](https://tawsif76.github.io/projects/the-maintenance-society/) · [Mohammed Sydul Hasan Tawsif](https://tawsif76.github.io/)
-
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 
 Official repository for **"The Maintenance Society: Coordination of Preventive Work in Small Language Model Agents"**.
