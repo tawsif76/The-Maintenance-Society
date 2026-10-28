@@ -1,11 +1,8 @@
 # The Maintenance Society: Coordination of Preventive Work in Small Language Model Agents
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-
-Official repository for **"The Maintenance Society: Coordination of Preventive Work in Small Language Model Agents"**.
-
-This benchmark studies how small language model agents allocate effort between private production and shared infrastructure maintenance under repeated operational pressure.
-
+This project studies how small language model agents allocate effort between private production and shared infrastructure maintenance under repeated operational pressure.
+![Six language model agents sharing production and maintenance work](maintenance-society-featured.png)
 ---
 
 ## Table of Contents
@@ -17,8 +14,7 @@ This benchmark studies how small language model agents allocate effort between p
 - [Setup and Installation](#setup-and-installation)
 - [Reproducing Paper Results](#reproducing-paper-results)
   - [1. Recompute Paper Tables and Metrics](#1-recompute-paper-tables-and-metrics)
-  - [2. Inspect Experiment Status and Plans](#2-inspect-experiment-status-and-plans)
-  - [3. Run Live Experiments with Ollama](#3-run-live-experiments-with-ollama)
+  - [2. Run Live Experiments with Ollama](#2-run-live-experiments-with-ollama)
 - [Data and Checkpoints Format](#data-and-checkpoints-format)
 
 ---
@@ -111,7 +107,7 @@ maintenance-society/
 ### Prerequisites
 
 - Python 3.11 or 3.12. The recorded study used Python 3.12.
-- [Ollama](https://ollama.com/) **exactly version 0.40.3**, only for live inference. The runner rejects other versions under the current configuration.
+- [Ollama](https://ollama.com/) **version 0.40.3**, only for live inference. The runner rejects other versions under the current configuration.
 
 Analysis of saved records requires neither Ollama nor a GPU.
 
@@ -147,9 +143,7 @@ python -m pip install -e .
 
 ## Reproducing Paper Results
 
-**Study-file availability:** The local study records live under `data/checkpoints/main/`. Git excludes the saved records and computed analysis outputs, so a fresh clone does not contain them. The compiled preprint is included at `results/preprint/latex/main-primearxiv.pdf`; the remaining LaTeX folder stays local. This README does not yet provide a public download link for the saved records.
-
-Before reproducing the analysis, copy the saved main-study records into this location:
+**Study-file availability:** The local study records live under `data/checkpoints/main/`. Before reproducing the analysis, copy the saved main-study records into this location:
 
 ```text
 data/checkpoints/main/
