@@ -1,7 +1,9 @@
 # The Maintenance Society: Coordination of Preventive Work in Small Language Model Agents
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+
 This project studies how small language model agents allocate effort between private production and shared infrastructure maintenance under repeated operational pressure.
+
 ![Six language model agents sharing production and maintenance work](maintenance-society-featured.png)
 ---
 
